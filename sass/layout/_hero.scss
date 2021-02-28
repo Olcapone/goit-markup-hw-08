@@ -15,3 +15,11 @@
   @include aligh(flex, center);
   flex-direction: column;
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .banner {
+    background-image: var(--primary-gradient), url("../images/hero@2x.jpg");
+  }
+}
