@@ -1,0 +1,23 @@
+.example-list-space {
+  padding-top: 100px;
+  padding-bottom: $big-space;
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.examples__item {
+  max-width: 370px;
+  border: 1px solid getColor("border-examples");
+
+  &:not(:nth-child(3n)) {
+    margin-right: $betw-space;
+  }
+
+  &:not(:nth-last-child(-n + 3)) {
+    margin-bottom: $betw-space;
+  }
+}

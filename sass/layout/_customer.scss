@@ -1,0 +1,40 @@
+.regular-customer__list {
+  display: flex;
+}
+
+.regular-customer__item {
+  display: flex;
+  width: 170px;
+
+  border: 1px solid getColor("fill-icon");
+  border-radius: 4px;
+
+  &:not(:last-child) {
+    margin-right: $betw-space;
+  }
+
+  &:hover {
+    border: 1px solid getColor("hover");
+    outline: none;
+  }
+
+  .icon-thumb {
+    height: 90px;
+    transition: var(--transition-menu);
+
+    &:focus {
+      border: 1px solid getColor("hover");
+      outline: none;
+    }
+  }
+}
+
+.regular-customer__icon {
+  fill: getColor("fill-icon");
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .icon-thumb:hover > &,
+  .icon-thumb:focus > & {
+    fill: getColor("hover");
+  }
+}

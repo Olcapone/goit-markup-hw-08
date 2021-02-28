@@ -1,0 +1,22 @@
+.footer {
+  background: getColor("footer-bgc");
+
+  address {
+    padding-top: 20px;
+  }
+}
+
+.address-block {
+  padding-right: 70px;
+}
+
+.address-block_item {
+  &:not(:last-child) {
+    padding: 0px;
+    margin-bottom: 9px;
+  }
+}
+.address-block_link {
+  line-height: 1.7;
+  color: getColor("text-on-dark");
+}

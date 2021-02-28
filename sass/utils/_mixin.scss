@@ -1,0 +1,10 @@
+@mixin aligh($d, $a) {
+  display: $d;
+  align-items: $a;
+}
+
+@mixin font($fs, $fw, $lh) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}

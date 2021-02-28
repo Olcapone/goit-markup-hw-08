@@ -1,0 +1,29 @@
+.team {
+  background-color: getColor("secondary-bgc");
+  color: getColor("primary");
+  @include font(16px, 400, 1.19);
+}
+
+.team__list {
+  display: flex;
+  height: 428px;
+}
+
+.team__person {
+  padding-bottom: $betw-space;
+  background-color: getColor("accent");
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  &:not(:last-child) {
+    margin-right: $betw-space;
+  }
+}
+
+.team__about-person {
+  @include aligh(flex, center);
+  flex-direction: column;
+
+  padding: 30px 0px 16px;
+}

@@ -1,0 +1,17 @@
+.banner {
+  max-width: 1600px;
+  height: 600px;
+
+  margin: 0px auto;
+  padding: 200px 0px 280px 0px;
+  background: getColor("footer-bgc");
+  background-image: var(--primary-gradient), url("../images/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  @include aligh(flex, center);
+  flex-direction: column;
+}

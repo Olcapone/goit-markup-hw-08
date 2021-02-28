@@ -1,0 +1,29 @@
+h1 {
+  color: getColor("accent");
+  @include font(44px, 900, 1.36);
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+h2 {
+  @include font(36px, 700, 1.17);
+  color: getColor("heading");
+  text-align: center;
+
+  padding-bottom: 50px;
+}
+
+h3 {
+  .advantages & {
+    padding-bottom: 10px;
+    @include font(14px, 700, 1.17);
+  }
+  .team & {
+    color: getColor("heading");
+    font-weight: 500;
+    padding-bottom: 10px;
+  }
+  .card__info & {
+    color: getColor("heading");
+    @include font(18px, 700, 2);
+  }
+}

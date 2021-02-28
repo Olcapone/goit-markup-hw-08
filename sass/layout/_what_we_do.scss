@@ -1,0 +1,28 @@
+.what-we-do {
+  padding-bottom: $big-space;
+}
+
+.img-examples {
+  @include aligh(flex, center);
+}
+
+.img-examples__item:not(:last-child) {
+  margin-right: $betw-space;
+}
+.img-examples__thumb {
+  position: relative;
+}
+.img-examples__text {
+  @include aligh(flex, center);
+  justify-content: center;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  background-color: getColor("secondary-gradient");
+
+  height: 70px;
+  width: 100%;
+
+  font-weight: 700;
+  color: getColor("accent");
+}

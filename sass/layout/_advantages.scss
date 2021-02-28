@@ -1,0 +1,27 @@
+.advantages-list {
+  display: flex;
+}
+
+.advantages-list__item {
+  flex-direction: column;
+  max-width: 270px;
+
+  &:not(:last-child) {
+    margin-right: $betw-space;
+  }
+  .icon-thumb {
+    height: 120px;
+    background-color: getColor("secondary-bgc");
+
+    border-radius: 4px;
+  }
+}
+
+.advantages-list__description {
+  padding-top: $betw-space;
+}
+
+.advantages p {
+  color: getColor("primary");
+  line-height: 1.7;
+}

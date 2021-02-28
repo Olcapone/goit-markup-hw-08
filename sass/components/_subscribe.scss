@@ -1,0 +1,26 @@
+.subscribe {
+  margin-left: auto;
+}
+
+.subscribe__form {
+  display: flex;
+}
+.subscribe__input {
+  display: block;
+
+  width: 358px;
+  height: 50px;
+  padding-left: 15px;
+
+  background-color: getColor("footer-bgc");
+  border: 1px solid getColor("border-on-dark");
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: getColor("accent");
+}
+
+.subscribe__icon {
+  margin-left: 10px;
+  fill: getColor("accent");
+}

@@ -1,0 +1,29 @@
+// utils
+@import "./utils/mixin";
+@import "./utils/variables";
+@import "./utils/visually_hidden";
+
+// base
+@import "./base/common";
+@import "./base/container";
+
+// components
+@import "./components/modal_buttom";
+@import "./components/social_links";
+@import "./components/logo";
+@import "./components/subscribe";
+@import "./components/title";
+@import "./components/modal_window";
+@import "./components/custom_form";
+@import "./components/card";
+
+// layout
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/advantages";
+@import "./layout/what_we_do";
+@import "./layout/team";
+@import "./layout/customer";
+@import "./layout/footer";
+@import "./layout/filter";
+@import "./layout/examples";
