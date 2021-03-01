@@ -15,7 +15,8 @@
   @include screen("tablet") {
     width: 738px;
 
-    .navigation & {
+    .navigation &,
+    .footer & {
       justify-content: center;
     }
   }
@@ -25,4 +26,4 @@
   }
 }
 
-//   .footer &,
+//
