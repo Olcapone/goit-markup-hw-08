@@ -24,15 +24,38 @@
             <!-- лого -->
             <a class="logo animate__pulse link" href="./index.html"><span class="logo_web">Web</span>Studio </a>
             <nav>
-                <ul class=" menu-block list ">
-                    <li class="menu-block_item"><a class="menu-block_link active-menu link" href="./portfolio.html">Студия</a></li>
+                <ul class="navigation-list menu-block list ">
+                    <li class="menu-block_item"><a class="menu-block_link active-menu link" href="#">Студия</a></li>
                     <li class="menu-block_item"><a class="menu-block_link link" href="./portfolio.html">Портфолио</a></li>
                     <li class="menu-block_item"><a class="menu-block_link link" href="">Контакты</a></li>
                 </ul>
             </nav>
+
+            <button type="button" class="burger-btn" data-menu-button>
+                <svg class="burger-btn__icon" >
+                    <use href="./images/symbol-defs.svg#icon-menu" ></use>
+                </svg>
+
+            </button>
+
+            <div class="mobile-menu " data-menu>
+                <ul class="mobile-menu__nav list">
+                    <li class="mobile-menu__item"><a class="mobile-menu__link link" href="#">Студия</a></li>
+                    <li class="mobile-menu__item"><a class=" link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="mobile-menu__item"><a class=" link" href="#">Контакты</a></li>
+                </ul>
+
+
+                <button  type="button" class="modal__close" data-menu-close>
+                    <svg class="modal__close__icon">
+                        <use href="./images/symbol-defs.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+
+            </div>
     
             <!-- Contacts -->
-            <ul class=" tel-block list">
+            <ul class="navigation-list tel-block list">
                 <li class="menu-block_item"><a class="tel-block_link link" href="mailto:info@devstudio.com">
                         <svg class="contact-icon" width="16" height="12">
                             <use href="./images/symbol-defs.svg#icon-mail"></use>
@@ -48,7 +71,7 @@
 
     <main>
         <!-- Секция контента -->
-        <section class="banner">
+        <!-- <section class="banner">
             <div class="container">
                 <div class="overlay">
             <h1>ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
@@ -56,9 +79,9 @@
             <!-- Баннер -->
            </div>
          </div>
-        </section>
+        </section> -->
 
-        <section class="advantages space-sections ">
+        <!-- <section class="advantages space-sections ">
             <div class="container">
             <h2 class="visually-hidden">Наши достоинства</h2>
           
@@ -110,9 +133,9 @@
             </li>
             </ul>
         </div>
-        </section>
+        </section> -->
 
-        <section class="what-we-do">
+        <!-- <section class="what-we-do">
             <div class="container ">
             <h2>Чем мы занимаемся</h2>
             <ul class="list img-examples">
@@ -157,9 +180,9 @@
             </li>
             </ul>
         </div>
-        </section>
+        </section> -->
 
-        <section class="team space-sections">
+        <!-- <section class="team space-sections">
             <div class="container">
             <h2>Наша команда</h2>
             <ul class="list team__list ">
@@ -416,8 +439,8 @@
                                  </li>
             </ul>
         </div>
-        </section>
-        <section class="regular-customers space-sections">
+        </section> -->
+        <!-- <section class="regular-customers space-sections">
             <div class="container">
                 <h2>Постоянные клиенты</h2>
                 <ul class="list regular-customer__list">
@@ -460,9 +483,9 @@
                 </ul>
             </div>
 
-        </section>
+        </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <section class="between-block">
         <div class="container">
 <div class="address-block">
@@ -521,13 +544,13 @@
 </div>
     </div>
 </section>
-    </footer>
+    </footer> -->
         <!-- Модальное окно  is-hidden-->
         
-        <div class="backdrop is-hidden" data-modal>
+        <!-- <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="modal__close" data-modal-close>
-                    <svg height="18"  width="18">
+                <button  type="button" class="modal__close" data-modal-close>
+                    <svg class="modal__close__icon">
                         <use href="./images/symbol-defs.svg#icon-close-black"></use>
                     </svg>
                 </button>
@@ -575,8 +598,9 @@
                 </form>
         
             </div>
-        </div>
+        </div> -->
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 
 

@@ -28,26 +28,3 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-
-.modal__close {
-  @include aligh(flex, center);
-  position: absolute;
-  justify-content: center;
-  right: 8px;
-  top: 8px;
-
-  width: 30px;
-  height: 30px;
-
-  background-color: getColor("accent");
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  outline: none;
-  cursor: pointer;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
-
-  &:focus > svg,
-  &:hover > svg {
-    fill: getColor("hover");
-  }
-}

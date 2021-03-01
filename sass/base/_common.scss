@@ -21,6 +21,10 @@ img {
   display: block;
   max-width: 100%;
 }
+button {
+  padding: 0px;
+  margin: 0px;
+}
 body {
   font-family: "Roboto", sans-serif;
   @include font(14px, 400, 1.14);

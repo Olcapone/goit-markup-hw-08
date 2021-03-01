@@ -1,0 +1,38 @@
+.modal__close {
+  @include aligh(flex, center);
+  position: absolute;
+  justify-content: center;
+
+  background-color: getColor("accent");
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+
+  &:focus > svg,
+  &:hover > svg {
+    fill: getColor("hover");
+  }
+
+  .modal & {
+    right: 8px;
+    top: 8px;
+
+    @include item-size(30px, 30px);
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .mobile-menu & {
+    top: 10px;
+    right: 15px;
+
+    @include item-size(40px, 40px);
+
+    border: none;
+  }
+}
+
+.modal__close__icon {
+  @include item-size(18px, 18px);
+}

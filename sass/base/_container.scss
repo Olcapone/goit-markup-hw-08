@@ -1,11 +1,28 @@
 .container {
-  width: 1200px;
-  margin: 0px auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
+  padding: 16px 15px;
 
-  .footer &,
   .navigation & {
     @include aligh(flex, center);
+    justify-content: space-between;
+  }
+
+  @include screen("mobi") {
+    width: 448px;
+    margin: 0px auto;
+  }
+
+  @include screen("tablet") {
+    width: 738px;
+
+    .navigation & {
+      justify-content: center;
+    }
+  }
+
+  @include screen("desktop") {
+    width: 1200px;
   }
 }
+
+//   .footer &,

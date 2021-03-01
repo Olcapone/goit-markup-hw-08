@@ -5,14 +5,16 @@
 .logo:visited {
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  @include font(26px, 700, 1.19);
   color: getColor("heading");
-
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
-
+  @include font(24px, 700, 1.19);
   animation-duration: 250ms;
+
+  @include screen("desktop") {
+    @include font(26px, 700, 1.19);
+    padding-top: 24px;
+    padding-bottom: 25px;
+    // margin-right: 93px;
+  }
 
   .footer & {
     color: getColor("accent");
