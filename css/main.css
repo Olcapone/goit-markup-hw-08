@@ -87,7 +87,7 @@ body {
 
 .container {
   width: 100%;
-  padding: 16px 15px;
+  padding: 16px 15px 0px;
 }
 
 .navigation .container {
@@ -263,11 +263,19 @@ body {
 
 h1 {
   color: #ffffff;
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
   text-align: center;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+}
+
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+  }
 }
 
 h2 {
@@ -718,7 +726,7 @@ h2 {
 
 .banner {
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin: 0px auto;
   padding: 200px 0px 280px 0px;
   background: #2f303a;
@@ -726,6 +734,12 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .banner {
+    height: 600px;
+  }
 }
 
 .overlay {

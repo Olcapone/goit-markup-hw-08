@@ -1,6 +1,6 @@
 .banner {
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
 
   margin: 0px auto;
   padding: 200px 0px 280px 0px;
@@ -9,6 +9,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @include screen("desktop") {
+    height: 600px;
+  }
 }
 
 .overlay {

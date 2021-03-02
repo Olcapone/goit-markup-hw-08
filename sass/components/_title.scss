@@ -1,9 +1,14 @@
 h1 {
   color: getColor("accent");
-  @include font(44px, 900, 1.36);
-  letter-spacing: 0.06em;
   text-align: center;
+  @include font(26px, 900, 1.62);
+  letter-spacing: 0.06em;
+
+  @include screen("desktop") {
+    @include font(44px, 900, 1.36);
+  }
 }
+
 h2 {
   @include font(36px, 700, 1.17);
   color: getColor("heading");
