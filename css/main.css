@@ -887,6 +887,7 @@ h2 {
   .team__list {
     display: flex;
     flex-wrap: wrap;
+    height: 428px;
   }
 }
 
@@ -931,17 +932,14 @@ h2 {
 
 .regular-customer__list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .regular-customer__item {
-  display: flex;
-  width: 170px;
+  width: 210px;
+  height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
-
-.regular-customer__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .regular-customer__item:hover {
@@ -957,6 +955,35 @@ h2 {
 .regular-customer__item .icon-thumb:focus {
   border: 1px solid #2196f3;
   outline: none;
+}
+
+.regular-customer__item:not(:nth-child(2n)) {
+  margin-right: 30px;
+}
+
+.regular-customer__item:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .regular-customer__item {
+    max-width: 226px;
+  }
+  .regular-customer__item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  .regular-customer__item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .regular-customer__item {
+    max-width: 170px;
+  }
+  .regular-customer__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .regular-customer__icon {

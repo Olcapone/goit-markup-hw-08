@@ -1,17 +1,14 @@
 .regular-customer__list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .regular-customer__item {
-  display: flex;
-  width: 170px;
+  width: 210px;
+  height: 90px;
 
   border: 1px solid getColor("fill-icon");
   border-radius: 4px;
-
-  &:not(:last-child) {
-    margin-right: $betw-space;
-  }
 
   &:hover {
     border: 1px solid getColor("hover");
@@ -25,6 +22,34 @@
     &:focus {
       border: 1px solid getColor("hover");
       outline: none;
+    }
+  }
+
+  &:not(:nth-child(2n)) {
+    margin-right: $betw-space;
+  }
+
+  &:not(:nth-last-child(-n + 2)) {
+    margin-bottom: $betw-space;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 226px;
+
+    &:not(:nth-child(3n)) {
+      margin-right: $betw-space;
+    }
+
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: $betw-space;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 170px;
+
+    &:not(:last-child) {
+      margin-right: $betw-space;
     }
   }
 }
