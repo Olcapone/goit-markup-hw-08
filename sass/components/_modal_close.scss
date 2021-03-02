@@ -5,7 +5,7 @@
 
   background-color: getColor("accent");
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 
   &:focus > svg,
   &:hover > svg {
@@ -34,5 +34,5 @@
 }
 
 .modal__close__icon {
-  @include item-size(18px, 18px);
+  @include item-size(40px, 40px);
 }

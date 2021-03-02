@@ -5,8 +5,13 @@
 }
 
 .navigation {
+  height: 60px;
   letter-spacing: 0.03em;
   border-bottom: 1px solid getColor("border-header");
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -19,12 +24,6 @@
 
     &:not(:last-child) {
       margin-right: 50px;
-    }
-
-    @media screen and (max-width: 1199px) {
-      .tel-block &:not(:last-child) {
-        margin-bottom: 10px;
-      }
     }
   }
 
@@ -47,31 +46,44 @@
       outline: none;
     }
   }
+}
 
-  .tel-block_link {
-    &,
-    &:visited {
-      color: getColor("primary");
-      transition: var(--transition-menu);
+.tel-block {
+  margin-left: auto;
+
+  @media screen and (max-width: 1199px) {
+    .menu-block_item:not(:last-child) {
+      margin-right: 0px;
+      margin-bottom: 10px;
     }
+  }
 
-    &:hover,
-    &:focus,
-    &:hover > svg,
-    &:focus > svg {
-      fill: getColor("hover");
-      color: getColor("hover");
-      outline: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+
+    .menu-block_item:not(:last-child) {
+      margin-right: 30px;
     }
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .tel-block {
-    display: flex;
-    margin-left: auto;
+.tel-block_link {
+  &,
+  &:visited {
+    color: getColor("primary");
+    transition: var(--transition-menu);
   }
-  .tel-block_link {
+
+  &:hover,
+  &:focus,
+  &:hover > svg,
+  &:focus > svg {
+    fill: getColor("hover");
+    color: getColor("hover");
+    outline: none;
+  }
+
+  @media screen and (min-width: 1200px) {
     @include aligh(flex, center);
     padding-top: $menu-space;
     padding-bottom: $menu-space;

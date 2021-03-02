@@ -9,6 +9,11 @@
   @include font(24px, 700, 1.19);
   animation-duration: 250ms;
 
+  @include screen("tablet") {
+    display: block;
+    margin-right: 88px;
+  }
+
   @include screen("desktop") {
     @include font(26px, 700, 1.19);
     padding-top: 24px;

@@ -94,6 +94,7 @@ body {
 
 .container {
   width: 100%;
+  height: 100%;
   padding: 0px 15px 0px 15px;
 }
 
@@ -243,6 +244,14 @@ body {
   font-weight: 700;
   line-height: 1.19;
   animation-duration: 250ms;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo,
+  .logo:visited {
+    display: block;
+    margin-right: 88px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -395,8 +404,10 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  height: auto;
+  width: 100%;
+  max-width: 450px;
+  height: 100%;
+  max-height: 609px;
   padding: 40px 39px 40px 41px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -405,7 +416,7 @@ h2 {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
     height: 581px;
   }
 }
@@ -416,7 +427,7 @@ h2 {
   position: absolute;
   justify-content: center;
   background-color: #ffffff;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
 .modal__close:focus > svg,
@@ -443,8 +454,8 @@ h2 {
 }
 
 .modal__close__icon {
-  width: 18px;
-  height: 18px;
+  width: 40px;
+  height: 40px;
 }
 
 .custom-information {
@@ -460,10 +471,17 @@ h2 {
 }
 
 .custom-information p {
+  text-align: center;
   font-size: 20px;
-  font-weight: 500;
-  line-height: 1.17;
+  font-weight: 700;
+  line-height: 1.5;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .custom-information p {
+    line-height: 1.17;
+  }
 }
 
 .user-info {
@@ -529,6 +547,10 @@ h2 {
 
 .user-agree__label a {
   color: #2196f3;
+}
+
+.user-agree__label span {
+  margin-left: 5px;
 }
 
 .user-agree__label::before {
@@ -615,7 +637,7 @@ h2 {
   height: 40px;
   background-color: #ffffff;
   border: none;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
 .burger-btn > svg {
@@ -636,6 +658,7 @@ h2 {
 
 .mobile-menu {
   position: absolute;
+  z-index: 100;
   top: 0%;
   left: 50%;
   padding: 48px 40px;
@@ -696,6 +719,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 64px;
 }
 
@@ -723,8 +747,15 @@ h2 {
 }
 
 .navigation {
+  height: 60px;
   letter-spacing: 0.03em;
   border-bottom: 1px solid #ececec;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    height: 80px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -737,15 +768,6 @@ h2 {
   .menu-block_item:not(:last-child) {
     margin-right: 50px;
   }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .tel-block .menu-block_item:not(:last-child) {
-    margin-bottom: 10px;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .menu-block_link {
     display: block;
     padding-top: 32px;
@@ -762,24 +784,42 @@ h2 {
     color: #2196f3;
     outline: none;
   }
-  .tel-block_link, .tel-block_link:visited {
-    color: #757575;
-    transition: var(--transition-menu);
-  }
-  .tel-block_link:hover, .tel-block_link:focus,
-  .tel-block_link:hover > svg,
-  .tel-block_link:focus > svg {
-    fill: #2196f3;
-    color: #2196f3;
-    outline: none;
+}
+
+.tel-block {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .tel-block .menu-block_item:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .tel-block {
     display: flex;
-    margin-left: auto;
   }
+  .tel-block .menu-block_item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.tel-block_link, .tel-block_link:visited {
+  color: #757575;
+  transition: var(--transition-menu);
+}
+
+.tel-block_link:hover, .tel-block_link:focus,
+.tel-block_link:hover > svg,
+.tel-block_link:focus > svg {
+  fill: #2196f3;
+  color: #2196f3;
+  outline: none;
+}
+
+@media screen and (min-width: 1200px) {
   .tel-block_link {
     display: flex;
     align-items: center;
