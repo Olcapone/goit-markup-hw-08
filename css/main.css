@@ -662,7 +662,7 @@ h2 {
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   z-index: 100;
   top: 0%;
   left: 50%;
