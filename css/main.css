@@ -179,6 +179,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe .main-button {
+    margin-left: 12px;
+  }
+}
+
 .social-list {
   display: flex;
   align-items: center;
@@ -1086,6 +1092,7 @@ h2 {
   .contact-block {
     display: flex;
     align-items: center;
+    justify-content: space-around;
   }
 }
 
