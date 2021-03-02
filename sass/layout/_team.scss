@@ -8,7 +8,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    height: 428px;
   }
 }
 
@@ -19,19 +18,23 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  &:not(:last-child) {
-    margin-bottom: $betw-space;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @media screen and (min-width: 768px) {
     max-width: 354px;
 
-    &:not(:nth-child(2n)) {
-      margin-right: $betw-space;
-    }
+    @media screen and (max-width: 1199px) {
+      &:not(:nth-child(2n)) {
+        margin-right: $betw-space;
+      }
 
-    &:not(:nth-last-child(-n + 2)) {
-      margin-bottom: $betw-space;
+      &:not(:nth-last-child(-n + 2)) {
+        margin-bottom: $betw-space;
+      }
     }
   }
 

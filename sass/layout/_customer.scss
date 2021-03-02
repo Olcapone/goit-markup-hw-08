@@ -1,11 +1,14 @@
 .regular-customer__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .regular-customer__item {
   width: 210px;
   height: 90px;
+
+  margin-bottom: $betw-space;
 
   border: 1px solid getColor("fill-icon");
   border-radius: 4px;
@@ -25,12 +28,13 @@
     }
   }
 
-  &:not(:nth-child(2n)) {
-    margin-right: $betw-space;
-  }
-
-  &:not(:nth-last-child(-n + 2)) {
-    margin-bottom: $betw-space;
+  @media screen and (min-width: 480px) {
+    &:not(:nth-child(2n)) {
+      margin-right: $betw-space;
+    }
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: $betw-space;
+    }
   }
 
   @media screen and (min-width: 768px) {
