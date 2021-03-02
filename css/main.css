@@ -120,7 +120,6 @@ body {
   }
   .footer .container {
     display: flex;
-    align-items: center;
   }
 }
 
@@ -285,7 +284,7 @@ body {
 
 .subscribe__input {
   display: block;
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding-left: 15px;
   background-color: #2f303a;
@@ -294,6 +293,12 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    width: 358px;
+  }
 }
 
 .subscribe__icon {
