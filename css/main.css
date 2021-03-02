@@ -58,11 +58,6 @@ body {
   color: #ffffff;
 }
 
-.space-sections {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .between-block {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -751,6 +746,16 @@ h2 {
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .banner {
     background-image: var(--primary-gradient), url("../images/hero@2x.jpg");
+  }
+}
+
+.advantages {
+  padding-top: 60px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .advantages {
+    padding-top: 94px;
   }
 }
 
