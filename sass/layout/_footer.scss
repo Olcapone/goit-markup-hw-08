@@ -6,11 +6,10 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-}
+.address-block {
+  padding-bottom: 60px;
 
-@media screen and (min-width: 1200px) {
-  .address-block {
+  @include screen("desktop") {
     padding-right: 70px;
   }
 }
@@ -23,4 +22,10 @@
 .address-block_link {
   line-height: 1.7;
   color: getColor("text-on-dark");
+}
+
+@media screen and (max-width: 768px) {
+  .soc-contact {
+    padding-bottom: 60px;
+  }
 }

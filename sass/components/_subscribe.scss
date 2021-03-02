@@ -4,6 +4,8 @@
 
 .subscribe__form {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .subscribe__input {
   display: block;

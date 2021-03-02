@@ -7,6 +7,10 @@
     justify-content: space-between;
   }
 
+  .footer & {
+    text-align: center;
+  }
+
   @include screen("mobi") {
     width: 480px;
     margin: 0px auto;

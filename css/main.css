@@ -103,6 +103,10 @@ body {
   justify-content: space-between;
 }
 
+.footer .container {
+  text-align: center;
+}
+
 @media only screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -161,7 +165,18 @@ body {
   display: flex;
   align-items: center;
   padding-left: 29px;
-  margin-left: 12px;
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe .main-button {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe .main-button {
+    margin-left: 12px;
+  }
 }
 
 .social-list {
@@ -251,6 +266,8 @@ body {
 
 .subscribe__form {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .subscribe__input {
@@ -1014,7 +1031,11 @@ h2 {
   padding-top: 20px;
 }
 
-@media screen and (min-width: 1200px) {
+.address-block {
+  padding-bottom: 60px;
+}
+
+@media only screen and (min-width: 1200px) {
   .address-block {
     padding-right: 70px;
   }
@@ -1028,6 +1049,12 @@ h2 {
 .address-block_link {
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 768px) {
+  .soc-contact {
+    padding-bottom: 60px;
+  }
 }
 
 .filter {
