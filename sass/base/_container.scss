@@ -14,15 +14,15 @@
 
   @include screen("tablet") {
     width: 738px;
+  }
+
+  @include screen("desktop") {
+    width: 1200px;
 
     .navigation &,
     .footer & {
       justify-content: center;
     }
-  }
-
-  @include screen("desktop") {
-    width: 1200px;
   }
 }
 
