@@ -1,9 +1,8 @@
 .regular-customer__list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
-
 .regular-customer__item {
   width: 210px;
   height: 90px;
@@ -28,7 +27,7 @@
     }
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     &:not(:nth-child(2n)) {
       margin-right: $betw-space;
     }

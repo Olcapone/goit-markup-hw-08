@@ -6,10 +6,14 @@
   }
 }
 
-.address-block {
-  padding-right: 70px;
+@media screen and (min-width: 768px) {
 }
 
+@media screen and (min-width: 1200px) {
+  .address-block {
+    padding-right: 70px;
+  }
+}
 .address-block_item {
   &:not(:last-child) {
     padding: 0px;

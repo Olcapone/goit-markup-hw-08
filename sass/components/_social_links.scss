@@ -1,6 +1,8 @@
 .social-list {
-  @include aligh(flex, center);
-  justify-content: center;
+  @media screen and (min-width: 768px) {
+    @include aligh(flex, center);
+    justify-content: center;
+  }
 }
 
 .social-list__item {

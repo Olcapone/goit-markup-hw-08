@@ -14,13 +14,16 @@
 
   @include screen("tablet") {
     width: 768px;
+
+    .footer & {
+      @include aligh(flex, center);
+    }
   }
 
   @include screen("desktop") {
     width: 1200px;
 
-    .navigation &,
-    .footer & {
+    .navigation {
       justify-content: center;
     }
   }
