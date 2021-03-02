@@ -7,10 +7,6 @@
     justify-content: space-between;
   }
 
-  .footer & {
-    text-align: center;
-  }
-
   @include screen("mobi") {
     width: 480px;
     margin: 0px auto;
@@ -21,10 +17,13 @@
 
     .footer & {
       display: flex;
+      flex-direction: column;
+    }
+  }
 
-      @media screen and (max-width: 1199px) {
-        flex-direction: column;
-      }
+  @media screen and (max-width: 1199px) {
+    .footer & {
+      text-align: center;
     }
   }
 
@@ -34,6 +33,7 @@
     .navigation &,
     .footer & {
       justify-content: center;
+      flex-direction: row;
     }
   }
 }

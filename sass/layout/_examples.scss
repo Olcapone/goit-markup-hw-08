@@ -1,23 +1,44 @@
-.example-list-space {
-  padding-top: 100px;
-  padding-bottom: $big-space;
-}
-
 .examples {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 40px;
+
+  @include screen("tablet") {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  @include screen("desktop") {
+    margin-top: 50px;
+  }
 }
 
 .examples__item {
-  max-width: 370px;
+  max-width: 450px;
   border: 1px solid getColor("border-examples");
 
-  &:not(:nth-child(3n)) {
-    margin-right: $betw-space;
+  &:not(:last-child) {
+    margin-bottom: $betw-space;
   }
 
-  &:not(:nth-last-child(-n + 3)) {
-    margin-bottom: $betw-space;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 354px;
+
+    &:not(:nth-child(2n)) {
+      margin-right: $betw-space;
+    }
+
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: $betw-space;
+    }
+  }
+
+  @include screen("desktop") {
+    max-width: 370px;
+    &:not(:nth-child(3n)) {
+      margin-right: $betw-space;
+    }
+
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: $betw-space;
+    }
   }
 }
