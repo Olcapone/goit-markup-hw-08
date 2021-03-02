@@ -1203,8 +1203,10 @@ h2 {
   border: 1px solid #eeeeee;
 }
 
-.examples__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 1199px) {
+  .examples__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
