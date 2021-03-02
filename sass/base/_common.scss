@@ -34,12 +34,16 @@ body {
 .accent--color--link:visited {
   color: getColor("accent");
 }
-// @include screen("desktop") {
-//   .space-sections {
-//     padding-top: $big-space;
-//     padding-bottom: $big-space;
-//   }
-// }
+
+.space-sections {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1199px) {
+    padding-top: $big-space;
+    padding-bottom: $big-space;
+  }
+}
 
 .between-block {
   padding-top: 60px;

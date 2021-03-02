@@ -1,5 +1,9 @@
 .what-we-do {
   padding-bottom: $big-space;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .img-examples {

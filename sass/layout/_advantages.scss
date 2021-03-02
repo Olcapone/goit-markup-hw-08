@@ -1,16 +1,8 @@
-.advantages {
-  padding-top: 60px;
-
-  @include screen("desktop") {
-    padding-top: $big-space;
-  }
-}
 .advantages-list {
   @include screen("tablet") {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: -30px;
   }
 }
 
@@ -21,30 +13,24 @@
     margin-bottom: $betw-space;
   }
 
-  @include screen("tablet") {
+  @media screen and (min-width: 768px) {
     max-width: 354px;
 
-    width: calc((100%-4 * 15px) / 2);
-    margin: 15px;
+    &:not(:nth-child(2n)) {
+      margin-right: $betw-space;
+    }
 
-    // второй вариант
-    //&:not(:nth-child(2n)) {
-    //   margin-right: 30px;
-    // }
-
-    // &:not(:nth-last-child(-n + 2)) {
-    //   margin-bottom: 30px;
-    // }
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: $betw-space;
+    }
   }
 
-  @include screen("desktop") {
+  @media screen and (min-width: 1200px) {
     max-width: 270px;
 
-    width: calc((100%-8 * 15px) / 4);
-
-    // &:not(:last-child) {
-    //   margin-right: $betw-space;
-    // }
+    &:not(:last-child) {
+      margin-right: $betw-space;
+    }
   }
 
   .icon-thumb {
@@ -56,7 +42,7 @@
 }
 
 .advantages-list__description {
-  padding-top: 30px;
+  padding-top: $betw-space;
 }
 
 .advantages p {

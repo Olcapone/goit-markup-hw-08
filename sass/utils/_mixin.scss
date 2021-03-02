@@ -15,7 +15,7 @@
 }
 
 @mixin screen($size) {
-  $desktop: "(min-width: 1024px)"; // Переменная со значением desktop размера
+  $desktop: "(min-width: 1200px)"; // Переменная со значением desktop размера
   $tablet: "(min-width: 768px)"; // Переменная со значением tablet размера
   $mobi: "(min-width: 480px)";
   @if $size == desktop {
