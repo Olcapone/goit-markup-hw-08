@@ -1,24 +1,39 @@
 .advantages-list {
-  display: flex;
+  @include screen("tablet") {
+    display: flex;
+  }
 }
 
 .advantages-list__item {
-  flex-direction: column;
-  max-width: 270px;
+  max-width: 450px;
 
   &:not(:last-child) {
-    margin-right: $betw-space;
+    margin-bottom: $betw-space;
   }
+
   .icon-thumb {
     height: 120px;
     background-color: getColor("secondary-bgc");
 
     border-radius: 4px;
   }
+
+  @include screen("tablet") {
+    max-width: 354px;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-right: $betw-space;
+    }
+  }
+
+  @include screen("desktop") {
+    max-width: 270px;
+  }
 }
 
 .advantages-list__description {
-  padding-top: $betw-space;
+  padding-top: 30px;
 }
 
 .advantages p {
