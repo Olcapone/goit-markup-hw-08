@@ -21,14 +21,18 @@
 
     .footer & {
       @include aligh(flex, center);
-      justify-content: space-around;
+
+      @media screen and (max-width: 1199px) {
+        flex-direction: column;
+      }
     }
   }
 
   @include screen("desktop") {
     width: 1200px;
 
-    .navigation {
+    .navigation &,
+    .footer & {
       justify-content: center;
     }
   }

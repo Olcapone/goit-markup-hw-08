@@ -121,7 +121,12 @@ body {
   .footer .container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer .container {
+    flex-direction: column;
   }
 }
 
@@ -129,7 +134,8 @@ body {
   .container {
     width: 1200px;
   }
-  .container .navigation {
+  .navigation .container,
+  .footer .container {
     justify-content: center;
   }
 }
@@ -1068,6 +1074,13 @@ h2 {
 @media screen and (max-width: 768px) {
   .soc-contact {
     padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-block {
+    display: flex;
+    align-items: center;
   }
 }
 
