@@ -20,6 +20,12 @@
     &:not(:last-child) {
       margin-right: 50px;
     }
+
+    @media screen and (max-width: 1023px) {
+      .tel-block &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
   }
 
   .menu-block_link {

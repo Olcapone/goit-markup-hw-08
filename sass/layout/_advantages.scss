@@ -8,6 +8,9 @@
 .advantages-list {
   @include screen("tablet") {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: -30px;
   }
 }
 
@@ -18,24 +21,37 @@
     margin-bottom: $betw-space;
   }
 
+  @include screen("tablet") {
+    max-width: 354px;
+
+    width: calc((100%-4 * 15px) / 2);
+    margin: 15px;
+
+    // второй вариант
+    //&:not(:nth-child(2n)) {
+    //   margin-right: 30px;
+    // }
+
+    // &:not(:nth-last-child(-n + 2)) {
+    //   margin-bottom: 30px;
+    // }
+  }
+
+  @include screen("desktop") {
+    max-width: 270px;
+
+    width: calc((100%-8 * 15px) / 4);
+
+    // &:not(:last-child) {
+    //   margin-right: $betw-space;
+    // }
+  }
+
   .icon-thumb {
     height: 120px;
     background-color: getColor("secondary-bgc");
 
     border-radius: 4px;
-  }
-
-  @include screen("tablet") {
-    max-width: 354px;
-    flex-direction: column;
-
-    &:not(:last-child) {
-      margin-right: $betw-space;
-    }
-  }
-
-  @include screen("desktop") {
-    max-width: 270px;
   }
 }
 
