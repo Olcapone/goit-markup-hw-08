@@ -164,12 +164,10 @@ body {
   margin-left: 12px;
 }
 
-@media screen and (min-width: 768px) {
-  .social-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-list__item {
