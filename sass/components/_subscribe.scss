@@ -1,11 +1,17 @@
 .subscribe {
-  margin-left: auto;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 
 .subscribe__form {
-  display: flex;
-  flex-wrap: wrap;
+  @include aligh(flex, center);
   justify-content: center;
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+  }
 }
 .subscribe__input {
   display: block;
