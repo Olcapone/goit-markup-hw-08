@@ -20,7 +20,7 @@
         <!-- лого -->
         <a class="logo animate__pulse link" href="./index.html"><span class="logo_web">Web</span>Studio </a>
         <nav>
-            <ul class=" menu-block list ">
+            <ul class="navigation-list menu-block list ">
                 <li class="menu-block_item"><a class="menu-block_link  link"
                         href="./index.html">Студия</a></li>
                 <li class="menu-block_item"><a class="menu-block_link active-menu link" href="./portfolio.html">Портфолио</a></li>
@@ -28,8 +28,46 @@
             </ul>
         </nav>
 
+                    <button type="button" class="burger-btn" data-menu-button>
+                        <svg class="burger-btn__icon">
+                            <use href="./images/symbol-defs.svg#icon-menu"></use>
+                        </svg>
+                    
+                    </button>
+                    
+                    <div class="mobile-menu " data-menu>
+                        <ul class="mobile-menu__nav list">
+                            <li class="mobile-menu__item"><a class="mobile-menu__link link" href="#">Студия</a></li>
+                            <li class="mobile-menu__item"><a class="mobile-menu__link  link" href="./portfolio.html">Портфолио</a></li>
+                            <li class="mobile-menu__item"><a class="mobile-menu__link  link" href="#">Контакты</a></li>
+                        </ul>
+                    
+                        <div>
+                    
+                            <ul class="mobile-menu_contact list">
+                                <li class=""><a class="mobile-menu__tel link" href="tel:+380961111111">+38 096 111 11 11 </a></li>
+                                <li class=""><a class="mobile-menu__mail link" href="mailto:info@devstudio.com"> info@devstudio.com</a></li>
+                            </ul>
+                    
+                            <ul class="soclink list">
+                                <li> <a class="link link-menu" href="">Instagram</a> </li>
+                                <li><a class="link" href="">Twitter</a></li>
+                                <li><a class="link" href="">Facebook</a></li>
+                                <li><a class="link" href="">LinkedIn</a></li>
+                            </ul>
+                        </div>
+                    
+                    
+                        <button type="button" class="modal__close" data-menu-close>
+                            <svg class="modal__close__icon">
+                                <use href="./images/symbol-defs.svg#icon-close-black"></use>
+                            </svg>
+                        </button>
+                    
+                    </div>
+
         <!-- Contacts -->
-        <ul class=" tel-block list">
+        <ul class="navigation-list tel-block list">
             <li class="menu-block_item"><a class="tel-block_link link" href="mailto:info@devstudio.com">
                     <svg class="contact-icon" width="16" height="12">
                         <use href="./images/symbol-defs.svg#icon-mail"></use>
@@ -432,6 +470,7 @@
 <footer class="footer">
     <section class="between-block">
         <div class="container">
+            <div class="contact-block">
             <div class="address-block">
                 <a class="logo link" href="./index.html"><span class="logo_web">Web</span>Studio</a>
                 <address>
@@ -479,6 +518,7 @@
                     </li>
                 </ul>
             </div>
+            </div>
             <div class="subscribe">
                 <p class="heading-dark-fon">Подпишитесь на рассылку</p>
                 <form action="#" class="subscribe__form">
@@ -493,6 +533,6 @@
         </div>
     </section>
     </footer>
-   
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

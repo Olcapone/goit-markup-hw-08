@@ -290,7 +290,7 @@ body {
 
 .subscribe__input {
   display: block;
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding-left: 15px;
   background-color: #2f303a;
@@ -299,6 +299,12 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .subscribe__input {
+    max-width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -635,7 +641,7 @@ h2 {
 }
 
 .mobile-menu {
-  position: fixed;
+  position: absolute;
   top: 0%;
   left: 50%;
   padding: 48px 40px;
@@ -1091,7 +1097,6 @@ h2 {
 @media screen and (min-width: 768px) {
   .contact-block {
     display: flex;
-    align-items: center;
     justify-content: space-around;
   }
 }
