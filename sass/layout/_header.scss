@@ -71,6 +71,7 @@
   &,
   &:visited {
     color: getColor("primary");
+    font-weight: 500;
     transition: var(--transition-menu);
   }
 

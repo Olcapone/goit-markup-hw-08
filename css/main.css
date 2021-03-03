@@ -819,6 +819,7 @@ h2 {
 
 .tel-block_link, .tel-block_link:visited {
   color: #757575;
+  font-weight: 500;
   transition: var(--transition-menu);
 }
 
