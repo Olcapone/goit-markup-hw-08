@@ -39,7 +39,7 @@
   background-color: getColor("accent");
 
   width: 100%;
-  max-width: 480px;
+
   height: 100vh;
 
   &.is-open {
@@ -55,6 +55,9 @@
         color: getColor("hover");
       }
     }
+  }
+  @include screen("tablet") {
+    display: none;
   }
 }
 
