@@ -7,7 +7,9 @@
 }
 
 .address-block {
-  padding-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
 
   @include screen("desktop") {
     padding-right: 70px;
