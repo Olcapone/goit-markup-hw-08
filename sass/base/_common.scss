@@ -42,12 +42,12 @@ body {
   @media screen and (min-width: 1199px) {
     padding-top: $big-space;
     padding-bottom: $big-space;
-  }
-}
 
-.between-block {
-  padding-top: 60px;
-  padding-bottom: 60px;
+    .footer & {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
 }
 
 .icon-thumb {

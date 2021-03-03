@@ -68,11 +68,10 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-}
-
-.between-block {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  .footer .space-sections {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .icon-thumb {
