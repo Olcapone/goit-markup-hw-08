@@ -82,12 +82,15 @@
 
   padding-left: 27px;
 
-  a {
-    color: getColor("hover");
+  a,
+  a:visited {
+    color: inherit;
   }
 
   span {
     margin-left: 5px;
+    color: getColor("hover");
+    text-decoration: underline;
   }
 
   &::before {

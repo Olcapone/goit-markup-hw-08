@@ -549,12 +549,15 @@ h2 {
   padding-left: 27px;
 }
 
-.user-agree__label a {
-  color: #2196f3;
+.user-agree__label a,
+.user-agree__label a:visited {
+  color: inherit;
 }
 
 .user-agree__label span {
   margin-left: 5px;
+  color: #2196f3;
+  text-decoration: underline;
 }
 
 .user-agree__label::before {
